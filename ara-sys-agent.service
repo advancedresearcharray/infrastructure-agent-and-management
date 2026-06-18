@@ -1,0 +1,15 @@
+[Unit]
+Description=ARA multi-agent Linux system maintenance agent (Gradio UI)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+EnvironmentFile=-/etc/default/ara-sys-agent
+WorkingDirectory=/opt/ara-sys-agent
+ExecStart=/opt/ara-sys-agent/venv/bin/python /opt/ara-sys-agent/sys_agent.py ui
+Restart=on-failure
+RestartSec=20
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,17 @@
+[local]
+localhost ansible_connection=local
+
+[proxmox]
+# Set ansible_host to your Proxmox node addresses before use.
+node9 ansible_host=CHANGE_ME
+node2 ansible_host=CHANGE_ME
+node3 ansible_host=CHANGE_ME
+
+[array_services]
+# Set ansible_host to your Array service addresses before use.
+array-portal ansible_host=CHANGE_ME
+array-fleet-ops ansible_host=CHANGE_ME
+array-mcp-gateway ansible_host=CHANGE_ME
+array-knowledge ansible_host=CHANGE_ME
+array-llm-peer-1 ansible_host=CHANGE_ME
+array-llm-peer-2 ansible_host=CHANGE_ME

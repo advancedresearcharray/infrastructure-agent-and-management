@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-01-01T00:00:00.000Z",
+  "guests": [
+    {
+      "name": "fleet-manager",
+      "vmid": 100,
+      "node": "node9",
+      "type": "lxc",
+      "status": "running",
+      "ip": ""
+    },
+    {
+      "name": "workload-a",
+      "vmid": 101,
+      "node": "node9",
+      "type": "lxc",
+      "status": "running",
+      "ip": ""
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "clusterName": "ARA",
+  "nodes": {
+    "node9": "198.51.100.9",
+    "node2": "198.51.100.39",
+    "node3": "198.51.100.53"
+  },
+  "protectedVmids": [],
+  "guestMapPath": "/opt/ara-sys-agent/data/guest-map.json",
+  "defaultLxcTemplate": "local:vztmpl/debian-12-standard_12.12-1_amd64.tar.zst",
+  "defaultLxcStorage": "local-lvm",
+  "defaultBridge": "vmbr0",
+  "defaultNameserver": "198.51.100.1",
+  "infra": {
+    "managerIp": "198.51.100.11",
+    "managerPort": 7860,
+    "mcpGateway": "http://198.51.100.112:8090",
+    "portalBase": "http://198.51.100.64:3140",
+    "openclawGatewayHost": "198.51.100.93",
+    "openclawGatewayWsPort": 18789,
+    "openclawAutomationApi": "http://198.51.100.93:18796",
+    "ghInboxDashboard": "http://198.51.100.93:9360",
+    "kiwifsServeBase": "http://198.51.100.240:3333",
+    "proxmoxMcpUrl": "http://198.51.100.174:8090/mcp",
+    "neurolinkPeers": [
+      "http://198.51.100.221:11434",
+      "http://198.51.100.238:11434"
+    ]
+  }
+}
